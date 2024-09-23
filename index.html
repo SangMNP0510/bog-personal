@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cá Nhân Của Tôi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #0044ff72;
+            padding: 20px;
+            text-align: center;
+        }
+        .post {
+            padding: 20px;
+            margin: 20px;
+            border-bottom: 3px solid #0055ff4d;
+        }
+        .comments {
+            margin-left: 20px;
+        }
+        .comment-form {
+            margin: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea, form button {
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Blog Cá Nhân Của Tôi</h1>
+    </div>
+    <div class="post">
+        <h2>Chi tiêu ngày hôm nay của tôi</h2>
+        <p>< Sang M.N.P ></p>
+        <small>Ngày 23/ 09/ 2024</small>
+        <p><b>Buổi sáng: </b>3k mì Kokomi</p>
+        <p><b>Buổi trưa: </b>30k suất cơm quán</p>
+        <p><b>Buổi chiều: </b>5k bánh khoai</p>
+        <p><b>Buổi tối: </b>100k góp tiền cùng bạn bè làm bữa lẩu</p>
+        <p><b>Buổi đêm: </b>20k cốc chanh tuyết</p>
+        <strong>=> Tổng cộng: 158k</strong>
+        <div class="comments">
+            <h3>Bình Luận</h3>
+            <blockquote>
+                <p><strong>Aquaman:</strong> Đc đấy em zai</p>
+            </blockquote>
+            <blockquote>
+                <p><strong>Doanh Doanh:</strong> Tiêu tiết kiệm thôi con nhé!</p>
+            </blockquote>
+            <div class="comment-form">
+                <h4>Để Lại Bình Luận</h4>
+                <form action="submit_comment.php" method="post">
+                    <input type="text" name="name" placeholder="Tên của bạn" required>
+                    <textarea name="comment" placeholder="Bình luận của bạn" required></textarea>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="post">
+        <h2>Nghe gì hôm nay!</h2>
+        <p>< Sang M.N.P ></p>
+        <small>Ngày 03/ 05/ 2022</small>
+        <p>Mình là 1 người rất hay nghe nhạc, vì tâm trạng mình lúc nào cũng chill lúc vui lúc buồn mang mác. Khi đó âm nhạc giúp mình thư giãn, giảm bớt căng thẳng trong cuộc sống, khiến mình yêu đời hơn bao giờ hết!...</p>
+        <p>Dưới đây là List 1 số bài mình hay nghe:</p>
+        <ol>
+            <li>Đường tôi chở em về</li>
+            <li>Như anh đã thấy em</li>
+            <li>Sài Gòn hôm nay mưa</li>
+            <li>...</li>
+        </ol>
+        <p>Các bạn có thể chia sẻ thêm cho mình biết những bài hát tâm trạng khác không?</p>
+        <div class="comments">
+            <h3>Bình Luận</h3>
+            <blockquote>
+                <p><strong>Buitruonglinh:</strong> Cảm ơn em đã yêu thích ca khúc của anh!</p>
+                <p><strong>Tamtrang:</strong> Cậu đã nghe bài "Tình ca tình ta" chưa? Hay lắm đấy!!!</p>
+
+            </blockquote>
+            <div class="comment-form">
+                <h4>Để Lại Bình Luận</h4>
+                <form action="submit_comment.php" method="post">
+                    <input type="text" name="name" placeholder="Tên của bạn" required>
+                    <textarea name="comment" placeholder="Bình luận của bạn" required></textarea>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
